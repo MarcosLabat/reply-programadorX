@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Cursos de programacion</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navegacion" id="nav">
+             <div class="navegacion__logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <button class="hamburger hamburger--slider btn-menu" type="button" id="btn-menu">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            <div class="navegacion__menu active" id="menu">
+                <a href="#tienda" class="navegacion__item">Tienda</a>
+                <a href="#" class="navegacion__item">Acerca de</a>
+                <a href="#" class="navegacion__item">Contacto</a>
+                <a href="#" class="navegacion__item">Iniciar Sesion</a>
+            </div>
+        </nav>
+       
+    </header>
+
+    <main>
+        <section class="hero" id="observar">
+            <div class="hero__contenedor contenedor">
+                <h1 class="hero__titulo">Empieza tu carrera en tecnología</h1>
+                <p class="hero__desc">Aprende a programar desde cero y obtén el conocimiento utilizado en proyectos de nivel mundial.</p>
+                <a href="#" class="hero__boton">Cursos</a>
+            </div>
+        </section>
+
+        <section class="cursos">
+            <div class="contenedor_curso contenedor">
+
+                <div class="curso__card contenedor">
+                    <h4 class="card__titulo">Ruta de desarrollo fullstack</h4>
+                    <p class="card__parrafo">Después de tomar este curso, aprenderás sobre Desarrollo Fullstack y podrás realizar proyectos profesionales y aplicar a trabajos.</p>
+                    <a href="#" class="btn">Quiero adquirir el curso!</a>
+                </div>
+            </div>
+
+            <div class="contenedor__ruta contenedor">
+                <div class="ruta__contendio">
+                    <h2>Ruta de desarrollo fullstack</h2>
+                    <p class="contendio__parrafo">✔️ Aprende a programar profesionalmente en 60 días</p>
+                    <p class="contendio__parrafo">✔️ 350+ lecciones en formato de video</p>
+                    <p class="contendio__parrafo">✔️Domina HTML,CSS, JavaScript, el DOM, React, SQL, Node.js y Express</p></p>
+                    <p class="contendio__parrafo">✔️ Aprende a construir, optimizar, y publicar Páginas Web y Apps</p>
+                    <p class="contendio__parrafo">✔️ Construye tu Portafolio y tu primer App</p>
+                    <p class="contendio__parrafo">✔️ Aprende sobre la Terminal, Git, GitHub, webpack, npm, Typescript, y más</p>
+                    <p class="contendio__parrafo">✔️ Registra tu dominio </p>
+                    <p class="contendio__parrafo">✔️ Realiza un proyecto de entrevista en Vanilla JavaScript</p>
+                    <p class="contendio__parrafo">✔️ Prepárate para entrevistas con nuestros exámenes</p>
+                    <p class="contendio__parrafo">✔️ Obtén tu Certificado de Finalización para tu hoja de vida</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor__instructor">
+            <div class="instructor__info contenedor">
+                <h2 class="info__titulo">Conoce a tu instructor</h2>
+                <p class="info__parrafo">Xavier Reyes Ochoa, también conocido como Programador X, es Ingeniero en Amazon. Ha trabajado en proyectos para Nintendo y Google. Trabajó como líder de un equipo de desarrollo por 3 años y comparte videos semanalmente en YouTube desde Seattle, USA</p>
+                <div class="info__redes">
+                    <a href="#">Linkedin</a>
+                    <a href="#">Youtube</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="instructor__video contenedor">
+                <video autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.ogg" type="video/ogg">
+                    <source src="img/video.ogg" type="video/ogg">
+                </video>
+            </div>
+        </section>
+
+        <section class="contenedor__programa contenedor" id="tienda">
+            <div class="programa__inicio contenedor">
+                <h2 class="inicio__titulo">¿Qué programa es el adecuado para tí?</h2>
+                <p class="inicio__parrafo">Ya sea que seas nuevo en la programación o busques mejorar tus habilidades, lleva tu carrera al siguiente nivel con uno de nuestros cursos integrales. </p>
+            </div>
+            <div class="programa__info contenedor">
+                <img src="img/curso1.jpg" alt="curso1" class="info__img">
+                <div class="info__curso">
+                    <h3>Empieza creando páginas web</h3>
+                    <p>Aprende a programar en Javascript y construye tu primera página web</p>
+                    <p><span>Ruta de Desarrollo Frontend</span> incluye cursos de <span>HTML, CSS, Javascript,</span> el <span>DOM,</span> y tu <span>Portafolio</span>.</p>
+                </div>
+            </div>
+            <div class="programa__info contenedor">
+                <img src="img/curso2.jpg" alt="curso2" class="info__img">
+                <div class="info__curso">
+                    <h3>Crece desarrollando web apps</h3>
+                    <p>Aprende a crear apps incluyendo servidores y bases de datos</p>
+                    <p><span>Ruta de Desarrollo PERN</span> incluye cursos de <span>React, SQL, Node.js, Express,</span> y tu <span>App</span>.</p>
+                </div>
+            </div>
+            <div class="programa__info contenedor">
+                <img src="img/curso3.jpg" alt="curso3" class="info__img">
+                <div class="info__curso">
+                    <h3>Avanza con Ciencias de Datos</h3>
+                    <p>Aprende conceptos avanzados de Ingeniería de Software.</p>
+                    <p>Incluye cursos de <span>Datos, Algoritmos, Sistemas, y Entrevistas</span>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor__comentarios">
+            <div class="comentarios__inicio contenedor">
+                <h2>¿Qué dicen las personas?</h2>
+                <p>Las palabras de mis colegas dicen mucho</p>
+            </div>
+            <div class="comentarios__overlay"></div>
+        </section>
+
+        <section class="contenedor__contacto">
+            <div class="contanto">
+                <div class="contato__escrito">
+                    <h2>Mantenete Concetado</h2>
+                    <p>Recibe emails con descuentos y anuncios</p>
+                </div>
+                <form action="" class="contacto__form">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Email">
+                    <button>Suscribite</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="preguntas">
+            <div class="contenedor__preguntas contenedor">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="contenedor__pregunta">
+                    <p class="pregunta">¿Por qué cuesta lo que cuesta? <img src="img/iconmonstr-plus-1.svg" alt="Abrir respuesta"></p>
+                    <div class="respuesta">
+                        <ul>
+                            <li>Ofrecemos alta calidad de videos teóricos y prácticos no encontrado en otros cursos de LATAM</li>
+                            <li>Ofrecemos acceso directo a tu instructor con experiencia en proyectos de nivel mundial</li>
+                            <li>Esta es una plataforma de educación avanzada que requiere costos de mantenimiento</li>
+                            <li> Nuestros precios son promedios entre USA, España, y LATAM</li>
+                            <li> Ofrecemos acceso continuo a mejoras de los cursos</li>
+                            <li> Incluye educación de nivel de Ingeniería a un costo menor que universidades y bootcamps que te darán altas oportunidades laborales</li>
+                            <li> Altos impuestos por nuestra ubicación en USA</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contenedor__pregunta">
+                    <p class="pregunta">¿Tienen cursos gratuitos? <img src="img/iconmonstr-plus-1.svg" alt="Abrir respuesta"></p>
+                    <p class="respuesta">Si deseas tutoriales y conocimientos gratuitos, Programador X los comparte todos los viernes en su canal de YouTube en programadorX.com</p>
+                </div>
+
+                <div class="contenedor__pregunta">
+                    <p class="pregunta">¿Cuanto tiempo dura cada curso? <img src="img/iconmonstr-plus-1.svg" alt="Abrir respuesta"></p>
+                    <p class="respuesta"><span class="span">Los cursos son flexibles y no tienen un límite de tiempo para completarlos.</span> 
+                        <span class="span">Estos cursos son editados sin silencios y planeados detalladamente para brindar excelente información que al final ahorran tiempo a los estudiantes. </span>
+                        <span class="span">No vendemos los cursos basado en tiempo ya que el formato del curso no solo incluye videos pero queremos que sepas que la duración de la Ruta Fullstack es de ~24 horas de video.</span>
+                        <span class="span">Nuestros alumnos completan uno de nuestros cursos en un promedio de una semana y la Ruta Fullstack en un promedio de 2 meses.</span></p>
+                </div>
+                
+
+                <div class="contenedor__pregunta">
+                    <p class="pregunta">¿Cuales son los requisitos? <img src="img/iconmonstr-plus-1.svg" alt="Abrir respuesta"></p>
+                    <p class="respuesta">No necesitas conocimientos previos para la Ruta Frontend ya que aprenderás progresivamente.
+
+                        Cada curso tiene una serie de requisitos si los compras individualmente.
+                        
+                        Se necesita tan solo conceptos de computación básica y un computador con un navegador que debes tener si estás leyendo esto. Los cursos son desde cero, fáciles de entender y llegaran hasta temas avanzados a nivel de Ingeniería.</p>
+                </div>
+                <div class="contenedor__pregunta">
+                    <p class="pregunta">¿Necesito saber inglés? <img src="img/iconmonstr-plus-1.svg" alt="Abrir respuesta"></p>
+                    <p class="respuesta">No.
+                        El inglés es muy importante en el mundo de la tecnología ya que los lenguajes y documentación de estas tecnologías son en inglés. Nuestros cursos incluyen traducciones y recursos para investigar de la mejor manera cuando no hay recursos en español.</p>
+                </div>
+
+                <div class="contenedor__pregunta">
+                    <p class="pregunta">¿Los certificados de finalización son acreditados por universidades? <img src="img/iconmonstr-plus-1.svg" alt="Abrir respuesta"></p>
+                    <p class="respuesta">No.
+
+                        Los certificados no son acreditados por universidades pero puedes incluirlos en tu hoja de vida. Academia X se enfoca en pasar conocimiento de alto nivel. Nuestro enfoque no es en títulos.</p>
+                </div>
+
+                <div class="contenedor__pregunta">
+                    <p class="pregunta">¿Por qué no estamos en Udemy? <img src="img/iconmonstr-plus-1.svg" alt="Abrir respuesta"></p>
+                    <p class="respuesta">No somos un MOOC (curso masivo online) como Udemy. En Academia X tienes acceso al tiempo de un Ingeniero de nivel mundial para hacer preguntas técnicas directamente.</p>
+                </div>
+
+                <div class="contenedor__pregunta">
+                    <p class="pregunta">¿Ofrecen becas? <img src="img/iconmonstr-plus-1.svg" alt="Abrir respuesta"></p>
+                    <p class="respuesta">Si.
+
+                        Realmente queremos que estudies con nosotros y entendemos si no tienes los recursos.
+                        
+                        Puedes escribirnos las razones por las que quieres tomar este curso y lo que planeas hacer con este conocimiento en 500 palabras, incluyendo tu nombre, email, y lo que estás dispuesto a pagar en el formulario de Contacto o directamente a academia.x.edu@gmail.com
+                        
+                        Por cada 10 alumnos, haremos un sorteo de becas entre los aplicantes y te notificaremos los resultados.</p>
+                </div>
+
+                <div class="contenedor__pregunta">
+                    <p class="pregunta">¿Tengo acceso indefinido a los cursos? <img src="img/iconmonstr-plus-1.svg" alt="Abrir respuesta"></p>
+                    <p class="respuesta">Si.
+
+                        ...pero de la forma más transparente debes saber que ningún emprendimiento dura para siempre.
+                        
+                        En caso de haber cambios en nuestros términos de uso, notificaremos a nuestros alumnos con tiempo brindándoles opciones para ayudarlos y por supuesto, no perjudicarlos.
+                        
+                        Toda compañía en el mundo debe ser flexible para adaptarse a cambios en el mercado y a eventos de fuerza mayor. En este momento nos está yendo muy bien y esperamos seguir creciendo junto a nuestros alumnos ofreciendo acceso indefinido.
+                        
+                        Gracias por confiar en Academia X!</p>
+                </div>
+
+                <div class="contenedor__pregunta">
+                    <p class="pregunta">¿Los cursos tienen un orden específico? <img src="img/iconmonstr-plus-1.svg" alt="Abrir respuesta"></p>
+                    <p class="respuesta">Si.
+
+                        Los cursos fueron creados en orden consecutivo de aprendizaje con el objetivo de crear un bootcamp y también para verlos individualmente. Por ejemplo, si ya tienes experticia en HTML, puedes saltar directamente a CSS pero te recomendamos comprarlos como Ruta o paquete para sacar el mayor provecho en términos de costo y conocimiento.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

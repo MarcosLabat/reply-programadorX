@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none
+}
+
+.navegacion{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto-fit, 1fr));
+    width: 100vw;
+    grid-template-rows: repeat(2, 1fr);
+    color: #fff;
+    background-color: #000;
+    height: 100px;
+}
+
+ .navegacion__logo{
+    width: 300px;
+    height: 100px;
+    grid-row: 1 / 2;
+}
+
+.navegacion__logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-menu{
+    grid-row: 1 / 2;
+}
+
+.navegacion__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    transition: transform .5s linear;
+    width: 100%;
+    background-color: #000;
+    margin-top: -1px;
+}
+
+.navegacion__item{
+    color: inherit;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.active{
+    transform: translateY(-500%);
+}
+
+.fijo{
+    position: fixed;
+    z-index: 10000;
+}
+
+.hero{
+    width: 100%;
+    height: 70vh;
+    max-height: 800px;
+    min-height: 600px;
+    position: relative;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__contenedor{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.hero::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 97, 217, 0.59), rgba(0, 97, 217, 0.59))  ,url(../img/fondo.jpg);
+    background-position: center;  
+    background-size: cover;
+}
+
+
+.hero__titulo{
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.hero__desc{
+    font-size: 1.8em;
+}
+
+.hero__boton{
+    background-color: rgba(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    padding: 15px 0;
+    border-radius: 16px;;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.cursos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ecf0f1;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.contenedor_curso{
+    background-color: white;
+    width: 90%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.contenedor_curso::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/curso.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+}
+
+.curso__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card__titulo{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #141414;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card__parrafo{
+    font-size: 1.6em;
+    margin: 5px 0;
+}
+
+.btn{
+    width: 200px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px 0;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.ruta__contendio{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 10px;
+    margin-bottom: 40px;
+}
+
+.ruta__contendio h2{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #141414;
+}
+
+.contendio__parrafo{
+    font-size: 1.6em;
+}
+
+/* Seccion de conoce a tu instuctor*/
+
+.contenedor__instructor{
+    background: #141414;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.instructor__info{
+    padding: 40px 0;
+    font-size: 10px;
+}
+
+.info__titulo{
+    font-size: 3.5em;
+    font-weight: 900;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info__parrafo{
+    font-size: 1.8em;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+.info__redes{
+    font-size: 1.7em;
+}
+
+.info__redes a{
+    cursor: pointer;
+    color: blue;
+}
+
+video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 30px 0;
+}
+
+/*seccion de los programas disponibles*/
+
+.contenedor__programa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.programa__inicio{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.inicio__titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.inicio__parrafo{
+    margin-bottom: 16px;
+}
+
+.programa__info{
+    text-align: center;
+}
+
+.info__img{
+    width: 200px;
+    height: 100%;
+    margin-bottom: 16px;
+}
+
+.info__curso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.info__curso h3{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info__curso p{
+    font-size: 14px;
+    width: 90%;
+    margin-bottom: 16px;
+}
+
+.info__curso p span{
+    font-weight: 900;
+}
+
+/* Seccion de comentarios */
+
+.contenedor__comentarios{
+    height: 400px;
+    background-color: #ecf0f1;
+    margin-top: 20px;
+    position: relative;
+}
+
+.comentarios__inicio{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.comentarios__inicio h2{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 16px;
+}
+
+.comentarios__inicio p{
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.comentarios__overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background-image: url(../img/comentarios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* SECCION DE CONTACTO */
+
+.contenedor__contacto{
+    margin-top: 50px;
+    position: relative;
+    height: 50vh;
+}
+
+.contenedor__contacto::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/fondocontacto.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contanto{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.contato__escrito {
+    text-align: center;
+}
+
+.contato__escrito h2{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.contato__escrito p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contacto__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto__form input{
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.contacto__form button{
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.preguntas{
+   margin-top: 20px;
+    
+}
+
+.contenedor__preguntas{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor__preguntas h2{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.contenedor__pregunta{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFf;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 13px 0 rgba(185,185,185,.25);
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px 25px;
+    font-weight: 400;
+}
+
+.pregunta{
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.pregunta img{
+    width: 15px;
+    height: 15px;
+}
+
+.respuesta{
+    max-height: 0;
+    text-align: justify;
+    opacity: 0;
+    transition: .3s linear all;
+}
+
+.respuesta ul li{
+    padding: 10px 0;
+}
+
+
+.contenedor__pregunta.activa .respuesta{
+    opacity: 1;
+    margin-top: 20px;
+    max-height: 100%;
+    color: #141414;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 400px){
+    .contenedor_curso{
+        height: 500px
+    }
+    
+    .contenedor_curso::before{
+        height: 65%;
+    }
+}
+
+@media screen and (min-width: 650px){ 
+    .contenedor_curso::before{
+        height: 70%;
+    }
+}
+
+
+@media screen and (min-width: 780px){
+    .btn-menu{
+        display: none;
+    }
+
+    .active{
+        transform: translateY(0);
+    }
+
+    .navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    
+    .navegacion__menu{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .navegacion__item{
+        padding: 0;
+    }
+
+    .navegacion__logo{
+        width: 600px;
+    }
+
+    .hero{
+        height: 85vh;
+    }
+    
+    .hero__contenedor{
+        font-size: 15px;
+    }
+    
+    .hero__desc{
+        font-size: 1.5em;
+    }
+
+    .hero__boton{
+        font-size: 1.2em;
+    }
+
+    .cursos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .contenedor_curso{
+        height: 450px
+    }
+    
+    .contenedor_curso::before{
+        height: 50%;
+    }
+
+    /*Seccion de conoce a tu instructor*/
+
+    .contenedor__instructor{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* seccion de programas disponibles */
+
+    .info__img{
+        width: 300px;
+        height: 100%;
+    }
+    
+
+    .inicio__titulo{
+        font-size: 48px;
+        margin-bottom: 16px;
+    }
+
+    .inicio__parrafo{
+        font-size: 18px;
+    }
+    
+    .contenedor__programa{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .programa__inicio{
+        grid-column: 1 / -1;
+    }
+
+    .programa__info{
+        grid-row: 2 / 3;
+    }
+
+    .info__curso h3{
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .info__curso p{
+        font-size: 18px;
+        width: 90%;
+        margin-bottom: 16px;
+    }
+
+    /* Seccion de progrmaas disoonibles */
+
+    .comentarios__inicio h2{
+        font-size: 38px;
+    }
+    
+    .comentarios__inicio p{
+        font-size: 20px;
+    }
+
+    .comentarios__overlay{
+        height: 65%;
+        background-position: top;
+    }
+
+    .contenedor__contacto{
+        height: 100%;
+    }
+    
+    .contacto__form{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .contato__escrito h2{
+        font-size: 28px;
+    }
+    
+
+    .contenedor__pregunta.activa .respuesta{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1020px){
+
+
+    .hero::before{
+        background-position: center top;  
+    }
+
+    .hero__desc{
+       max-width: 50%;
+    }
+
+    .hero__titulo{
+       max-width: 50%;
+    }
+
+    .cursos{
+        gap: 0;
+    }
+
+    .contenedor_curso{
+        height: 550px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .contenedor_curso::before{
+        height: 65%;
+    }
+    
+    .btn{
+        width: 220px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 15px 0;
+    }
+
+    .ruta__contendio{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 12px;
+    }
+    
+}
